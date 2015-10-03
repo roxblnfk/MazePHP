@@ -1,0 +1,15 @@
+a:4:{s:11:"generalchat";a:5:{s:15:"editgeneralchat";a:1:{s:9:"onkeydown";s:90:"if($key===VK_RETURN)
+    if(TRGUI::generalChatSend($self->text))
+        $self->text='';";}s:15:"richgeneralchat";a:0:{}s:16:"listboxchatusers";N;s:8:"--fmedit";a:2:{s:8:"oncreate";s:27:"$self->doubleBuffered=true;";s:10:"onactivate";s:87:"c('GeneralChat->editGeneralChat')->setFocus();
+TRGUI::$Interface['IPBox']->setFocus();";}s:18:"listboxgeneralchat";a:0:{}}s:3:"log";a:3:{s:14:"buttonclearlog";a:1:{s:7:"onclick";s:66:"$c=c('Log->memoLog');
+$c->text=date('[H:i:s] ').'Лог очищен!'.RN;";}s:7:"memolog";N;s:8:"--fmedit";a:1:{s:8:"oncreate";s:27:"$self->doubleBuffered=true;";}}s:4:"eval";a:3:{s:8:"memoeval";N;s:10:"buttoneval";a:1:{s:7:"onclick";s:44:"$txt=c('Eval->memoEval')->text;
+eval($txt);";}s:8:"--fmedit";a:0:{}}s:5:"index";a:8:{s:8:"--fmedit";a:5:{s:8:"oncreate";s:148:"$self->doubleBuffered=true;
+//global $STD;
+//$Size=new stdSize(800,800);
+//$Form=c('Form1');
+//$STD=new Game1($Form,$Size);
+TRGUI::init($self);";s:7:"onkeyup";s:30:"TRGUI::KeyboardButtonUp($key);";s:12:"ondeactivate";s:26:"TRGUI::KeyboardDisabled();";s:9:"onkeydown";s:32:"TRGUI::KeyboardButtonDown($key);";s:12:"onclosequery";s:37:"TRGUI::OptionsSave();
+TRGUI::stop();";}s:9:"editipbox";a:1:{s:9:"onkeydown";s:41:"if($key===VK_RETURN)
+    TRGUI::start();";}s:11:"editportbox";a:1:{s:9:"onkeydown";s:41:"if($key===VK_RETURN)
+    TRGUI::start();";}s:10:"editmyname";a:1:{s:9:"onkeydown";s:41:"if($key===VK_RETURN)
+    TRGUI::start();";}s:14:"scrollgameform";a:0:{}s:15:"imagebackground";a:1:{s:7:"onclick";s:0:"";}s:10:"imagelevel";N;s:10:"popupindex";N;}}
